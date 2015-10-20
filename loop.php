@@ -1,5 +1,5 @@
 <?php
-//example 1
+
 $emailCollection = array();
 foreach ($users as $user) {
     $userEmail = $user->getEmail();
@@ -13,7 +13,9 @@ foreach ($users as $user) {
             }
         }
     }
-    if (count($emailCollection == 10)) break;
+    if (count($emailCollection == 10)) {
+        break;
+    }
 }
 sendPromotionEmail($emailCollection);
 
@@ -29,4 +31,4 @@ class EmailCollection implements \Countable
 }
 
 $emailCollection = new EmailCollection(Myfilter, $user);
-sendPromotionEmail($emailCollection->getValidEmail()->offset(0,10));
+sendPromotionEmail($emailCollection->getValidEmail()->offset(0, 10));

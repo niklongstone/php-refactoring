@@ -9,26 +9,27 @@ switch ($city) {
         return getNormalClothes();
 }
 
-interface City {
-  public function getClothes();
+interface City
+{
+    public function getClothes();
 }
 
-class Oslo implements City {
-  function getClothes() {
-    return 'winterClothes';
-  }
+class Brno implements City
+{
+    function getClothes()
+    {
+        return 'normalClothes';
+    }
 }
 
-class Miami implements City {
-  function getClothes() {
-    return 'summerClothes';
-  }
+class Oslo implements City
+{
+    //code...
 }
 
-class Brno implements City {
-  function getClothes() {
-    return 'normalClothes';
-  }
+class Miami implements City
+{
+    //code...
 }
 
 $cityClothes = new $city();
