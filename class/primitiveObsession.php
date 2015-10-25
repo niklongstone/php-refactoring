@@ -5,9 +5,10 @@ class Authentication
     const ROLE_MEMBER= 1;
     const ROLE_ADMIN = 2;
 
-    public function getUsername($user)
+    public function getRole($user)
     {
-        $username = $user['username'];
+        $role = $user['role'];
+        //other operations
     }
 }
 
