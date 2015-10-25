@@ -19,3 +19,4 @@ class AdminRole implements Role
 class Authentication
 
 class User
+//you can use $role instanceof GuestRole
