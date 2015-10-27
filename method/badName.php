@@ -15,11 +15,10 @@ class UserApi
     function canDeleteMe()
 }
 
-
 const USER_PROFILE_URI = "/usr/profile/";
 const USER_REGISTER_URI = "/usr/register/";
 const USER_EMAIL_PREFERENCE = "/service/user/xml/preference/";
 
 function getUser()
 //function canDeleteMe has bad name and
-//doesn't belong to the User class
+//could be also moved from the User class
