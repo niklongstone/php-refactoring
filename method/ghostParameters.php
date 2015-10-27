@@ -1,4 +1,5 @@
 <?php
+
 function authoriseOperation(
     $userId, $pageId, $auth, $isMaster = false, DAO $dao = null
 )

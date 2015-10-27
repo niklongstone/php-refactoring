@@ -5,9 +5,7 @@ class ClientShop
     function addProductToBasket($product)
     {
         $product = $this->setProductDetails($product);
-        if ($product->isAGift()) {
-            $this->addNicePaper();
-        }
+        if ($product->isAGift()) $this->addNicePaper();
         $this->saveProduct($product);
     }
 
@@ -27,9 +25,8 @@ class Product implements GenericProduct
     public function getPrice()
 }
 
-class NicePaper implements GenericProduct
-
-class ChristmasDiscount implements Discount
+class NicePaper implements GenericProduct {}
+class ChristmasDiscount implements Discount {}
 
 class Basket
 {

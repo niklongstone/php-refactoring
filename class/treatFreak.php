@@ -1,4 +1,5 @@
 <?php
+
 class Restaurant
 {
     use Client, Menu, Food;

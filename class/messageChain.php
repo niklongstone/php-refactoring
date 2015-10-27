@@ -1,4 +1,5 @@
 <?php
+
 class UserAdministration
 {
     public static function getAdminSettings($targetId)
@@ -18,10 +19,6 @@ class UserAdministration
 class UserAdministration
 {
     public function __construct(SettingsInterface $settings)
-    {
-        $this->$settings = $settings;
-    }
-
     private function getSettings()
 }
 
@@ -35,5 +32,4 @@ class UserSettings
 
         return new Settings($response);
     }
-
 }

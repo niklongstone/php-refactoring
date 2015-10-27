@@ -5,12 +5,8 @@ foreach ($users as $user) {
     $userEmail = $user->getEmail();
     if (null !== $userEmail) {
         if (isValid($userEmail)) {
-            if (isGmail($userEmail)) {
-                $emailCollection[] = $userEmail;
-            }
-            if (isYahoo($userEmail)) {
-                $emailCollection[] = $userEmail;
-            }
+            if (isGmail($userEmail)) $emailCollection[] = $userEmail;
+            if (isYahoo($userEmail)) $emailCollection[] = $userEmail;
         }
     }
     if (count($emailCollection == 10)) {

@@ -1,4 +1,5 @@
 <?php
+
 class Authentication
 {
     const ROLE_GUEST = 0;
