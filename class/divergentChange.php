@@ -21,6 +21,7 @@ class ClientShop
     }
 }
 
+//----------------------------------------------------------------------
 class Product implements GenericProduct
 {
     public function getPrice()
@@ -34,5 +35,3 @@ class Basket
 {
     public function add(Product $product, Discount $discount)
 }
-
-

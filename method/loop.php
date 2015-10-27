@@ -19,6 +19,7 @@ foreach ($users as $user) {
 }
 sendPromotionEmail($emailCollection);
 
+//----------------------------------------------------------------------
 class EmailCollection implements \Countable
 {
     public function __construct(EmailFilter $filter, $user)

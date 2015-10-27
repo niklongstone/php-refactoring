@@ -11,6 +11,7 @@ function authoriseOperation(
     }
 }
 
+//----------------------------------------------------------------------
 // Use DI for the DAO possibly in the constructor
 // Anyway try to use null object if really needed
 function authoriseMasterOperation(//... DAO $dao)

@@ -6,6 +6,7 @@ if ($currentDate < $christmasDate && $currentDate > $summerDate) {
     $saleDiscount = ($yearBasicRate + $normalDiscount) * $quantity;
 }
 
+//----------------------------------------------------------------------
 $saleDiscount = getNormalDiscount($quantity);
 if (isChristmas($currentDate)) {
     $saleDiscount = getCristhmasDiscount($quantity);

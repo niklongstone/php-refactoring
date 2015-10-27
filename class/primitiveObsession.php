@@ -12,6 +12,7 @@ class Authentication
     }
 }
 
+//----------------------------------------------------------------------
 class GuestRole implements Role
 class MemberRole implements Role
 class AdminRole implements Role

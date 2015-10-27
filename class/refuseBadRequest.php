@@ -16,6 +16,7 @@ class Fish extends Animal {
     }
 }
 
+//----------------------------------------------------------------------
 interface Animal
 {
     public function eat()

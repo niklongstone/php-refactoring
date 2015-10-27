@@ -14,7 +14,8 @@ public function insertVideo(
     )
 public function checkVideo()
 {
-    //code ...    
+    //code ...
 }
 
+//----------------------------------------------------------------------
 public function insertVideo(Video $video)

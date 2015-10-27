@@ -14,7 +14,7 @@ class UserAdministration
     }
 }
 
-
+//----------------------------------------------------------------------
 class UserAdministration
 {
     public function __construct(SettingsInterface $settings)

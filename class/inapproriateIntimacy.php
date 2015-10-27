@@ -9,6 +9,7 @@ function getAsXML($uri) {
     return $this->getResponseAsSimpleXml();
 }
 
+//----------------------------------------------------------------------
 function getAsXML() {
     $request = $this->createRequest();
     $options = $this->createOptions();

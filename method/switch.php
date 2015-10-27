@@ -9,6 +9,7 @@ switch ($city) {
         return getNormalClothes();
 }
 
+//----------------------------------------------------------------------
 interface City
 {
     public function getClothes();
@@ -22,15 +23,8 @@ class Brno implements City
     }
 }
 
-class Oslo implements City
-{
-    //code...
-}
-
-class Miami implements City
-{
-    //code...
-}
+class Oslo implements City{  //code... }
+class Miami implements City{ //code...}
 
 $cityClothes = new $city();
 $cityClothes->getClothes();

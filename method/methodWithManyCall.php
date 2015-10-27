@@ -11,6 +11,7 @@
       return $this->convertResponseToCorrectRepresentation($response);
   }
 
+//----------------------------------------------------------------------
 function getSomething() {
     $request = $this->createRequestForDao();
     $response = $this->dao->send($request);

@@ -9,8 +9,7 @@ class Bill
    use Client, Menu, Food;
 }
 
-
-
+//----------------------------------------------------------------------
 class Restaurant
 {
     use ClientBookingTrait, MenuTrait, FoodTrait;
