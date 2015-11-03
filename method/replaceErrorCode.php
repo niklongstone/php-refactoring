@@ -1,11 +1,11 @@
 <?php
 
-const SEAT_NOT_EXIXST = -1;
+const SEAT_NOT_FOUND = -1;
 
 public function chooseSeat($seatNumber)
 {
     if ($seatNumber <= 0 && $seatNumber > 100) {
-        return SEAT_NOT_EXIST;
+        return SEAT_NOT_FOUND;
     }
 
     //reserve the seat

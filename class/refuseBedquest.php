@@ -1,14 +1,12 @@
 <?php
 
-interface Animal
+class Animal
 {
     public function fly()
     public function swim()
     public function eat()
 }
-
 class Fish extends Animal {
-
     public function swim()
     public function fly()
     {
@@ -17,12 +15,12 @@ class Fish extends Animal {
 }
 
 //----------------------------------------------------------------------
-interface Animal
+interface GenericAnimal
 {
     public function eat()
 }
-interface SeaAnimal implements Animal
+interface SeaAnimal
 {
     public function swim()
 }
-class Fish implements SeaAnimal
+class Fish implements GenericAnimal, SeaAnimal

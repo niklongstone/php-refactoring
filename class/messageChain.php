@@ -2,7 +2,7 @@
 
 class UserAdministration
 {
-    public static function getAdminSettings($targetId)
+    public function getAdminSettings($targetId)
     {
         $this->dao = new AdmDAO();
 
