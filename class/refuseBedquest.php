@@ -1,12 +1,12 @@
 <?php
 
-class Animal
+interface Animal
 {
     public function fly()
     public function swim()
     public function eat()
 }
-class Fish extends Animal {
+class Fish implements Animal {
     public function swim()
     public function fly()
     {
