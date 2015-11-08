@@ -1,34 +1,17 @@
 <?php
 
-class ClientShop
+class User
 {
-    function addProductToBasket($product)
-    {
-        $product = $this->setProductDetails($product);
-        if ($product->isAGift()) $this->addNicePaper();
-        $this->saveProduct($product);
-    }
+    public function getName() //code
 
-    function setProductDetails($product)
-    {
-        if ($this->isChristmas())
-        {
-            $price = $this->getDiscount() * $product->getPrice();
-            $product->setNewPrice($product, $price);
-        }
-    }
+    public function isAuthorized() //code
+
+    public function toXML() //code
 }
-
+    
 //----------------------------------------------------------------------
-class Product implements GenericProduct
-{
-    public function getPrice()
-}
+class User {}
 
-class NicePaper implements GenericProduct {}
-class ChristmasDiscount implements Discount {}
+class Authorization {}
 
-class Basket
-{
-    public function add(Product $product, Discount $discount)
-}
+class UserSerializer {}
