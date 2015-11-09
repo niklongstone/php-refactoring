@@ -11,8 +11,8 @@ function getAsXML($uri) {
 
 //----------------------------------------------------------------------
 function getAsXML() {
-    $request = $this->createRequest();
-    $options = $this->createOptions();
+    $request = $this->client->createRequest();
+    $options = $this->client->createOptions();
     $response = $this->service->sendRequest($request, $options);
 
     return $this->getAsSimpleXml($response);
